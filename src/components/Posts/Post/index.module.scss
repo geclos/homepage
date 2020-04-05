@@ -1,0 +1,12 @@
+.root {
+  margin-bottom: get('dimensions.s64');
+
+  .link {
+    color: get('colors.white');
+    margin-bottom: 0;
+  }
+
+  .date {
+    color: get('colors.gray.s600');
+  }
+}

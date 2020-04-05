@@ -4,6 +4,8 @@ import React from "react"
 import SEO from "../components/seo"
 import { Link, graphql } from "gatsby"
 
+import styles from './index.module.scss'
+
 const BlogPostTemplate = ({ data, pageContext, location }) => {
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata.title
@@ -17,10 +19,10 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
       />
       <article>
         <header>
-          <h1 style={{ marginBottom: 0 }}>
+          <h1 className={styles.title}>
             {post.frontmatter.title}
           </h1>
-          <p style={{ display: `block` }}>
+          <p className={styles.date}>
             {post.frontmatter.date}
           </p>
         </header>

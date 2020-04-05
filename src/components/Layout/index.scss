@@ -33,3 +33,18 @@ p {
   margin-block-start: get('dimensions.s24');
   margin-block-end: get('dimensions.s24');
 }
+
+blockquote {
+  color: get('colors.gray.s800');
+  margin: get('dimensions.s24') 0;
+  padding: 0 get('dimensions.s24');
+  border-left: 5px solid get('colors.gray.s400');
+
+  > p {
+    margin: 0;
+  }
+}
+
+ul > li > p {
+  margin: 0;
+}
