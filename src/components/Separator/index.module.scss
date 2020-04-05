@@ -1,0 +1,7 @@
+.separator {
+  border-radius: 3px;
+  background: get('colors.gray.s600');
+  height: get('dimensions.s4');
+  margin: get('dimensions.s64') 0 get('dimensions.s32');
+  width: 15%;
+}

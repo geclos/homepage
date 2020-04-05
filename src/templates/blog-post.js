@@ -1,7 +1,9 @@
+import Footer from '../components/Footer'
 import Layout from "../components/Layout"
 import PropTypes from 'prop-types'
 import React from "react"
 import SEO from "../components/seo"
+import Separator from '../components/Separator'
 import { Link, graphql } from "gatsby"
 
 import styles from './index.module.scss'
@@ -27,10 +29,10 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           </p>
         </header>
         <section dangerouslySetInnerHTML={{ __html: post.html }} />
-        <hr />
       </article>
 
-      <nav>
+
+      <nav className={styles.nav}>
         <ul
           style={{
             display: `flex`,
@@ -56,6 +58,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           </li>
         </ul>
       </nav>
+      <Footer />
     </Layout>
   )
 }
@@ -75,7 +78,9 @@ export const pageQuery = graphql`
         title
       }
     }
-    markdownRemark(fields: { slug: { eq: $slug } }) {
+    markdownRemark(
+      fields: { slug: { eq: $slug } }
+    ) {
       id
       excerpt(pruneLength: 160)
       html

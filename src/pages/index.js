@@ -23,7 +23,6 @@ Index.propTypes = {
 
 export default Index
 
-// TODO: hmmm... I have no idea how graphQL querying works. Gonna have to investigate...
 export const pageQuery = graphql`
   query {
     site {

@@ -1,12 +1,11 @@
 import Bio from '../Bio'
 import React from 'react'
-
-import styles from './index.module.scss'
+import Separator from '../Separator'
 
 const Footer = () => {
   return (
     <div>
-      <div className={styles.separator} />
+      <Separator />
       <Bio />
     </div>
   )
