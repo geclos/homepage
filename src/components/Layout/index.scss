@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,300;0,400;0,500;1,700&display=swap');
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-top: 0;
+}
+
+html,
+body,
+div {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  background: get('colors.gray.s200');
+  color: get('colors.white');
+  font: get('fonts.family');
+}
+
+main {
+  max-width: get('dimensions.s768');
+  margin: get('dimensions.s64') auto; // DONE: We want all dimensions to follow a system.
+}
+
+a {
+  color: get('colors.primary.s400');
+}
+
+p {
+  margin-block-start: get('dimensions.s24');
+  margin-block-end: get('dimensions.s24');
+}
