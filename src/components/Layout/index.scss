@@ -17,12 +17,22 @@ div {
 html, body {
   background: get('colors.gray.s200');
   color: get('colors.white');
-  font: get('fonts.family');
+  font: get('fonts.family.small');
+
+  @media (min-width: 480px) {
+    font: get('fonts.family.medium');
+  }
 }
 
 main {
   max-width: get('dimensions.s768');
-  margin: get('dimensions.s64') auto; // DONE: We want all dimensions to follow a system.
+  margin: get('dimensions.s32') auto; // DONE: We want all dimensions to follow a system.
+  padding: 0 get('dimensions.s32');
+
+  @media (min-width: 768px) {
+    padding: 0;
+    margin: get('dimensions.s64') auto; // DONE: We want all dimensions to follow a system.
+  }
 }
 
 a {
@@ -47,4 +57,35 @@ blockquote {
 
 ul > li > p {
   margin: 0;
+}
+
+pre[class*='language'] {
+  background-color: get('colors.gray.s100');
+  border-radius: 5px;
+  box-shadow: inset 1px 1px 3px rgba(0, 0, 0, .2), inset -1px -1px 3px rgba(0, 0, 0, 0.2);
+  color: get('colors.white');
+  text-shadow: none;
+  padding: get('dimensions.s16');
+  margin: get('dimensions.s24') 0;
+
+  code {
+    color: white;
+    text-shadow: none;
+  }
+
+  .token.operator {
+    background: none;
+  }
+
+  .token.punctuation {
+    color: get('colors.white');
+  }
+
+  .token.atrule, .token.attr-value, .token.keyword {
+    color: #008FCC;
+  }
+
+  .token.function, .token.class-name {
+    color: #DF5873;
+  }
 }

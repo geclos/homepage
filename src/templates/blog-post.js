@@ -3,7 +3,6 @@ import Layout from "../components/Layout"
 import PropTypes from 'prop-types'
 import React from "react"
 import SEO from "../components/seo"
-import Separator from '../components/Separator'
 import { Link, graphql } from "gatsby"
 
 import styles from './index.module.scss'
@@ -31,7 +30,6 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         <section dangerouslySetInnerHTML={{ __html: post.html }} />
       </article>
 
-
       <nav className={styles.nav}>
         <ul
           style={{
@@ -58,6 +56,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           </li>
         </ul>
       </nav>
+
       <Footer />
     </Layout>
   )
