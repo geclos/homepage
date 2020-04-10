@@ -1,16 +1,21 @@
-import Footer from '../components/Footer'
-import Layout from "../components/Layout"
-import Posts from '../components/Posts'
+import Footer from 'src/components/Footer'
+import Layout from "src/components/Layout"
+import Posts from 'src/components/Posts'
 import PropTypes from 'prop-types'
 import React from "react"
-import SEO from "../components/seo"
+import SEO from "src/components/seo"
+import Nav from './Nav'
 import { graphql } from "gatsby"
 
-const Index = ({ data, location }) => {
+const Index = ({ data, pageContext }) => {
+  const { numPages, currentPage } = pageContext
+
   return (
-    <Layout location={location}>
+    <Layout>
       <SEO title="Gerard Clos - Personal Page" />
       <Posts posts={data.allMarkdownRemark.edges} />
+      <Nav numPages={numPages} currentPage={currentPage} />
+
       <Footer />
     </Layout>
   )
@@ -18,33 +23,27 @@ const Index = ({ data, location }) => {
 
 Index.propTypes = {
   data: PropTypes.object,
-  location: PropTypes.object
+  pageContext: PropTypes.object
 }
 
 export default Index
 
 export const pageQuery = graphql`
-  query {
-    site {
-      siteMetadata {
-        title
-      }
-    }
+ query blogListQuery($skip: Int!, $limit: Int!) {
     allMarkdownRemark(
-      filter: { fields: { slug: { ne: "/bio/" }}},
-      limit: 4,
+      filter: { fields: { slug: { ne: "/bio/" }}}
       sort: { fields: [frontmatter___date], order: DESC }
+      limit: $limit
+      skip: $skip
     ) {
       edges {
         node {
-          id
-          excerpt
           fields {
             slug
           }
           frontmatter {
-            date(formatString: "MMMM DD, YYYY")
             title
+            date(formatString: "MMMM DD, YYYY")
             description
           }
         }

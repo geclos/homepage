@@ -5,7 +5,7 @@ import React from 'react'
 const Posts = ({ posts }) => {
   return (
     <>
-      {posts.map(({ node }) => <Post key={node.id} node={node} />)}
+      {posts.map(({ node }, i) => <Post key={i} node={node} />)}
     </>
   )
 }

@@ -1,8 +1,8 @@
-import Footer from '../components/Footer'
-import Layout from "../components/Layout"
+import Footer from 'src/components/Footer'
+import Layout from "src/components/Layout"
 import PropTypes from 'prop-types'
 import React from "react"
-import SEO from "../components/seo"
+import SEO from "src/components/seo"
 import { Link, graphql } from "gatsby"
 
 import styles from './index.module.scss'
