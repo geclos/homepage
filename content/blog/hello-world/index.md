@@ -19,7 +19,7 @@ science, statistics, and economics [on Twitter](https://twitter.com/geclos).
 Expect some good content in the coming weeks spanning Computer Science,
 Rationalism, Literature and everything in between.
 
-This blog is built with [Gatsby](https://www.gatsbyjs.org/) and hosted with
-Zeist's [now](https://github.com/zeit/now).
+This blog is built with [Gatsby](https://www.gatsbyjs.org/) and hosted on
+Zeist's [Now](https://github.com/zeit/now).
 
 Onward!
