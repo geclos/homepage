@@ -9,14 +9,14 @@ Well, this happened.
 
 The world is on lockdown and me with it, so I figured I might as well try to
 bring back an old good habit of mine: writing. This isn't [my first
-try](https://gerardclos.me/) at this medium thought I certainly hope it would be
+try](https://gerardclos.me/) at this medium, though I certainly hope it would be
 my last, for it would signify a certain modicum of success.
 
-A bit about me: I'm Gerard 👋, I am an engineer, infovore and aspirant
-polymath. Nowadays, I build Factorial and rant about computer science,
-statistics and economcis [on Twitter](https://twitter.com/geclos).
+A bit about me: I'm Gerard 👋, I am an engineer, infovore and aspirant polymath.
+Nowadays, I build [Factorial](https://factorialhr.com/) and rant about computer
+science, statistics, and economics [on Twitter](https://twitter.com/geclos).
 
 Expect some good content in the coming weeks spanning Computer Science,
-Rationalism and everything in between.
+Rationalism, Literature and everything in between.
 
 Onward!
