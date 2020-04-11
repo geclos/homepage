@@ -15,7 +15,6 @@ const Index = ({ data, pageContext }) => {
       <SEO title="Gerard Clos - Personal Page" />
       <Posts posts={data.allMarkdownRemark.edges} />
       <Nav numPages={numPages} currentPage={currentPage} />
-
       <Footer />
     </Layout>
   )

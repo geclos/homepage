@@ -28,9 +28,7 @@ export default function Bio () {
 
   return (
     <div>
-      <p
-        dangerouslySetInnerHTML={{ __html: html }}
-      />
+      <div dangerouslySetInnerHTML={{ __html: html }} />
     </div>
   )
 }

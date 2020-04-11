@@ -1,7 +1,7 @@
 const colors = require('./src/styles/colors')
 const sassVars = require(__dirname + "/src/styles/index.js")
-var sass = require("node-sass");
-var sassUtils = require("node-sass-utils")(sass)
+const sass = require("node-sass")
+const sassUtils = require("node-sass-utils")(sass)
 
 module.exports = {
   siteMetadata: {

@@ -7,6 +7,8 @@ import styles from './index.module.scss'
 function Nav ({ currentPage, numPages }) {
   const prevPage = currentPage - 1
 
+  if (!prevPage) return null
+
   return (
     <nav className={styles.nav}>
       <ul
