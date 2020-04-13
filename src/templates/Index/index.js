@@ -12,7 +12,7 @@ const Index = ({ data, pageContext }) => {
 
   return (
     <Layout>
-      <SEO title="Gerard Clos - Personal Page" />
+      <SEO title="Gerard Clos - Homepage" />
       <Posts posts={data.allMarkdownRemark.edges} />
       <Nav numPages={numPages} currentPage={currentPage} />
       <Footer />
