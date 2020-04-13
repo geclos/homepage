@@ -19,6 +19,11 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         description={post.frontmatter.description || post.excerpt}
       />
       <article>
+        <div className={styles.pre}>
+          <Link to='/'>
+            Home
+          </Link>
+        </div>
         <header>
           <h1 className={styles.title}>
             {post.frontmatter.title}
