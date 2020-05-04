@@ -37,11 +37,6 @@ a {
   color: get('colors.primary.s400');
 }
 
-p {
-  margin-block-start: get('dimensions.s24');
-  margin-block-end: get('dimensions.s24');
-}
-
 blockquote {
   color: get('colors.gray.s800');
   margin: get('dimensions.s24') 0;
@@ -86,4 +81,16 @@ pre[class*='language'] {
   .token.function, .token.class-name {
     color: #DF5873;
   }
+}
+
+h1 {
+  font: get('fonts.family.larger');
+}
+
+h2 {
+  font: get('fonts.family.large');
+}
+
+h3 {
+  font: get('fonts.family.medium');
 }

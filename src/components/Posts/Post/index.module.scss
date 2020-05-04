@@ -3,10 +3,16 @@
 
   .link {
     color: get('colors.white');
+    text-decoration: none;
     margin-bottom: 0;
   }
 
   .date {
     color: get('colors.gray.s600');
+  }
+
+  p {
+    margin-block-start: get('dimensions.s16');
+    margin-block-end: get('dimensions.s16');
   }
 }

@@ -9,11 +9,11 @@ const Post = ({ node }) => {
   return (
     <article className={styles.root} key={node.fields.slug}>
       <header>
-        <h3 className={styles.link}>
+        <h2 className={styles.link}>
           <Link className={styles.link} to={node.fields.slug}>
             {title}
           </Link>
-        </h3>
+        </h2>
         <small className={styles.date}>{node.frontmatter.date}</small>
       </header>
       <section>

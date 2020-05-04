@@ -11,6 +11,12 @@
   margin: get('dimensions.s48') 0;
 }
 
-.pre {
-  margin: get('dimensions.s24') 0;
+.article {
+  .pre {
+    margin: get('dimensions.s24') 0;
+  }
+
+  h2 {
+    margin: get('dimensions.s24') 0 get('dimensions.s16');
+  }
 }
