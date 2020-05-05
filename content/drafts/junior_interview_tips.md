@@ -5,6 +5,28 @@ description: "I have conducted dozens of interviews with junior developers.
 These are their most common mistakes and how to avoid them."
 ---
 
+In the last 4 years I have interviewed dozens of candidates at all levels of
+experience and, without a doubt, the cohort with the highest rejection rate are
+candidates to entry level positions (junior devs from now on).
+
+What pains me to see is that most candidates fall off the recruitment funnel for
+the simplest of the mistakes, which could easily be addressed with some days of
+preparation. The motivs have often nothing to do with their code nor their
+technical proficiency, but are rather are related to how candidate should
+prepare for a technical review of their work. The failures are in the mindset,
+rather than in their work.
+
+In this post, we will go over the developer recruitment process at Factorial -
+which is close to the industry standard - as well as give prospective candidates
+a few tips that will serve them not only to face off technical interviews but
+also to generally improve as software engineers, period.
+
+From now on, I'm gonna assume you are a junior dev looking for your first job,
+both because this is the target audience of this post and I prefer the use of
+second person.
+
+----
+
 Since I joined Factorial, close to 4 years ago, we have been following more or
 less the same recruitment process for our development team. We think it
 strikes a good balance between showing us what candidates are capable of without
@@ -15,6 +37,8 @@ most tech recruitment processes aren't like that at all. In fact, Factorial's
 approach is much closer to the industry standard to the point that it's fair to
 assume most devs will be encountering something similar to our interview
 process, with some variations.
+
+----
 
 ## The process
 
