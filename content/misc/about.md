@@ -23,6 +23,4 @@ share the best I read, on [Github](https://github.com/geclos), to check out my
 work, or you can try [Factorial](https://factorialhr.com), which is the company
 I've helped built in the last 4 years.
 
-Cheers.
-
 [Take me home.](/)
