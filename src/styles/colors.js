@@ -1,5 +1,5 @@
 module.exports = {
-  white: '#FAFFFD',
+  white: '#FEFAF3',
   gray: {
     s100: '#2d272f',
     s200: '#342E37',
@@ -12,9 +12,13 @@ module.exports = {
     s900: '#cbc5ce'
   },
   primary: {
-    s400: '#FF686B'
+    s400: '#FF5254'
   },
   success: {
     s400: '#8BD628'
+  },
+  code: {
+    blue: '#008FCC',
+    cyan: '#DF5873'
   }
 }
