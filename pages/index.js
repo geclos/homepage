@@ -1,4 +1,9 @@
 const indexPage = require('./indexPage')
 const blogPostPage = require('./blogPostPage')
+const aboutPage = require('./aboutPage')
 
-module.exports = { indexPage, blogPostPage }
+module.exports = {
+  aboutPage,
+  blogPostPage,
+  indexPage
+}

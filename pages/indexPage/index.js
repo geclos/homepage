@@ -6,7 +6,7 @@ module.exports = async ({ graphql, actions }) => {
     `
       {
         allMarkdownRemark(
-          filter: { fields: { slug: { ne: "/bio/" }}}
+          filter: { fileAbsolutePath: { regex: "/blog/" } }
           limit: 1000
           sort: { fields: [frontmatter___date], order: DESC }
         ) {
