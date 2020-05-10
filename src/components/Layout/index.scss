@@ -36,6 +36,11 @@ main {
   }
 }
 
+p {
+  margin: 0;
+  margin-top: 32px;
+}
+
 a {
   color: get('colors.primary.s400');
 }

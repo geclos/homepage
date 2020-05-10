@@ -1,0 +1,14 @@
+$media-sm: 768px;
+
+.root {
+  border: 3px solid get('colors.gray.s100');
+  box-shadow: 4px 4px 0 get('colors.gray.s100');
+
+  .content {
+    margin: get('dimensions.s32');
+
+    @media (min-width: $media-sm) {
+      margin: get('dimensions.s64');
+    }
+  }
+}

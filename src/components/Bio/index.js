@@ -3,9 +3,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 const query = graphql`
   query {
-    allMarkdownRemark(filter: {
-      fields:{slug:{eq: "/bio/"}}
-    }) {
+    allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/misc\/bio/" } }) {
       edges {
         node {
           id
