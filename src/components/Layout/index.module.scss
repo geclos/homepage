@@ -1,0 +1,26 @@
+$media-sm: 768px;
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: get('dimensions.s32') 0;
+
+  @media (min-width: $media-sm) {
+    margin: get('dimensions.s64') 0;
+  }
+
+  .link {
+    margin: 0 get('dimensions.s8');
+
+    img {
+      width: 24px;
+      height: 24px;
+
+      @media (min-width: $media-sm) {
+        width: 32px;
+        height: 32px;
+      }
+    }
+  }
+}

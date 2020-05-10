@@ -27,12 +27,12 @@ html, body {
 
 main {
   max-width: get('dimensions.s768');
-  margin: get('dimensions.s32') auto;
+  margin: get('dimensions.s32') auto 0;
   padding: 0 get('dimensions.s32');
 
   @media (min-width: $media-sm) {
     padding: 0;
-    margin: get('dimensions.s64') auto;
+    margin: get('dimensions.s64') auto 0;
   }
 }
 
