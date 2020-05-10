@@ -30,7 +30,7 @@ export default Index
 export const pageQuery = graphql`
  query blogListQuery($skip: Int!, $limit: Int!) {
     allMarkdownRemark(
-      filter: { fields: { slug: { ne: "/bio/" }}}
+      filter: { fileAbsolutePath: { regex: "/blog/" } }
       sort: { fields: [frontmatter___date], order: DESC }
       limit: $limit
       skip: $skip

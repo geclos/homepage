@@ -8,11 +8,14 @@ module.exports = {
     title: 'Gerard Clos',
     author: {
       name: 'Gerard Clos',
-      summary: 'software engineer and aspirant polymath.',
+      summary: 'software engineer, infovore, and aspirant polymath.',
     },
-    description: `Blog - Rationalism, Philosophy, History, Economics, Computer Science.`,
+    description: 'Ideas to understand the world around us.',
     siteUrl: `https://gerardclos.com`,
-    social: { twitter: `geclos` }
+    social: {
+      twitter: `geclos`,
+      github: `geclos`
+    }
   },
   plugins: [
     {
@@ -72,7 +75,7 @@ module.exports = {
       options: {
         name: `Gerard Clos`,
         start_url: `/`,
-        background_color: colors.gray.s200,
+        background_color: colors.white,
         theme_color: colors.primary.s400,
         display: `minimal-ui`,
         icon: `content/assets/favicon.png`,

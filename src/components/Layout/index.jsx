@@ -1,11 +1,11 @@
 import PropTypes from 'prop-types'
 import React from "react"
-import githubLogo from '../../../content/assets/github_32px.png'
-import twitterLogo from '../../../content/assets/twitter_32px.png'
+import SocialMedia from 'src/components/SocialMedia'
 import { Helmet } from 'react-helmet'
 
-import './index.scss'
 import styles from './index.module.scss'
+
+import './index.scss'
 
 const Layout = ({ children }) => {
   return (
@@ -16,16 +16,7 @@ const Layout = ({ children }) => {
       </Helmet>
       {children}
       <footer className={styles.footer}>
-        <div className={styles.link}>
-          <a rel='noopener noreferrer' target='_blank' href='https://github.com/geclos'>
-            <img src={githubLogo} />
-          </a>
-        </div>
-        <div className={styles.link}>
-          <a rel='noopener noreferrer' target='_blank' href='https://twitter.com/geclos'>
-            <img src={twitterLogo} />
-          </a>
-        </div>
+        <SocialMedia />
       </footer>
     </main>
   )
