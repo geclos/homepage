@@ -1,5 +1,5 @@
 ---
-title: "Why most developers fail their entry-level tech interviews"
+title: "Why most developers fail their first tech interviews"
 date: "2020-05-04"
 description: "I've come to realize most entry-level candidates to development
 roles make the same set of mistakes. Let's review them through and see how you
