@@ -7,8 +7,8 @@ can avoid them."
 ---
 
 In the last 4 years interviewing candidates for development roles, I've come to
-realize the cohort with the highest rejection rate are applicants to
-entry-level positions.
+realize the cohort with the highest rejection rate is applicants to entry-level
+positions.
 
 What pains me to see is that most of them fall off the recruitment funnel for
 the simplest of mistakes, which often have nothing to do with their professional
