@@ -33,11 +33,10 @@ can. Ideally, you want to leave this encounter convinced whether you want this
 job or not. We will answer almost any question you might have, and you should be
 wary of any company that isn't willing to do the same.
 
-Once introductions have been made, you will be asked to submit a take-home
-exercise that will require you to write a representative chunk of your own
-code. If you are prolific enough, we will gladly accept another program you
-might have already developed. The second interview basically consists of you
-going through your own code with some devs from our tech team. You'll get asked
+Once introductions have been made, we will ask you to submit a piece of code you
+might have already developed. If you are not prolific enough, we will give you a
+take-home exercise instead. The second interview basically consists of you going
+through your own code with some devs from our tech team. You'll get asked
 technical questions about your submission and some more general aspects, if the
 conversation takes us down that path.
 
