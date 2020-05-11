@@ -16,7 +16,7 @@ skills and could easily be avoided. These aren't failures of skill, but of
 communication.
 
 In this post, we will go over the developer recruitment process at
-[Factorial](https://factorialhr.com) mostly as an excuse for me to explain what
+[Factorial](https://factorialhr.com), mostly as an excuse for me to explain what
 is it that makes so many entry-level candidates flop their interviews, and how
 you can avoid it.
 
@@ -224,6 +224,6 @@ on these gray areas.
 
 There's many more aspects we could explore in preparation for your first tech
 interviews, but these are the foundational aspects all candidates should be aware
-of. The rest, we'll explore in upcoming entries.
+of. The rest, we'll explain in upcoming entries.
 
 Cheers, and good luck at your next interview.
