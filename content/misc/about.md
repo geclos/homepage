@@ -21,6 +21,6 @@ So, expect lots of entropy-fighting.
 You can follow me on [Twitter](https://twitter.com/geclos), where I
 share the best I read, on [Github](https://github.com/geclos), to check out my
 work, or you can try [Factorial](https://factorialhr.com), which is the company
-I've helped built in the last 4 years.
+I've helped build in the last 4 years.
 
 [Take me home.](/)
