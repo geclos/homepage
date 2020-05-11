@@ -34,7 +34,7 @@ job or not. We will answer almost any question you might have, and you should be
 wary of any company that isn't willing to do the same.
 
 Once introductions have been made, you will be asked to submit a take-home
-exercise that will require from you to write a representative chunk of your own
+exercise that will require you to write a representative chunk of your own
 code. If you are prolific enough, we will gladly accept another program you
 might have already developed. The second interview basically consists of you
 going through your own code with some devs from our tech team. You'll get asked
@@ -58,13 +58,13 @@ We get candidates with brilliant exercises that cannot defend it accordingly
 during the interview, candidates with lesser code that fair rather well during
 questioning, candidates obsessed with CS theory, others more of the
 learn-as-you-go type, variant degrees of experience, creativity,
-resourcefulness...  At the end, all these aspects average out, painting the
+resourcefulness... In the end, all these aspects average out, painting the
 portrait of the default entry-level applicant who is capable of writing a fairly
 decent program involving frontend and backend code, sometimes with some extra
 sprinkles of infrastructure code on top.
 
 Put another way, statistics say that if you made it to the tech interview portion
-of the recruitment process you probably have the technical skill set required to get
+of the recruitment process you probably have the technical skillset required to get
 hired. This won't always be the case but, generally, the rule holds true.
 
 Now, if all candidates look alike, what is it that distinguishes them apart? What
@@ -91,15 +91,15 @@ and your knowledge boundaries will be put to bare. Knowledge communication
 requires, well, knowledge; You have to do the work and learn your computer
 _sciency_ stuff first.
 
-Problem is, often developers spread their knowledge surface large and
-thin, sometimes too thin. They learn from repetition, which leads to
-lack of understanding, which results in poor knowledge communication.
+Problem is, often developers spread their knowledge surface large and thin,
+sometimes too thin. They learn from repetition, which leads to a lack of
+understanding, which results in poor knowledge communication.
 
 Let's say you, as a candidate, learn about the new fancy framework _du jour_,
 follow its documentation examples and, with today's tools, you quickly get a
 pretty decent app up and running. You already look like 99.9% of the other
 candidates. You even got _professional_ stuff out of the box: JSON Web Token
-authentication, cross-site scripting protection, WebSocket support and what not.
+authentication, cross-site scripting protection, WebSocket support, and whatnot.
 You start feeling confident and end up submitting an exercise that contains code
 that looks like this:
 
@@ -121,7 +121,7 @@ To tackle this issue, I recommend candidates take a much more deliberate
 approach and think in terms of knowledge communication. If you are an applicant,
 run over every line of your exercise before you submit it and ask yourself: "Can
 I explain this line of code?". This will immediately beg questions about the
-_what_, _why_ and _how_ of every piece of your program you didn't really grasp,
+_what_, _why_, and _how_ of every piece of your program you didn't really grasp,
 deepening your knowledge.
 
 What's more important, this approach will set you down a path of reinforced
@@ -134,7 +134,7 @@ At this point, you will arrive at the tech interview with knowledge not only on
 how to build a program with a particular framework, but on how the underlying
 infrastructure of the internet works to support the many features your framework
 provides and your app makes use of. You will be able to communicate your
-knowledge about your code and even respond to some extra curve balls the
+knowledge about your code and even respond to some extra curveballs the
 interviewer might throw at you. Your skills will be immediately more
 transferable, as all frameworks rely on the same underlying infrastructure.
 You'll be a better engineer.
@@ -170,12 +170,12 @@ const CatCounter = ({ cat }) => {
 }
 ```
 
-Now, `useEffect` is hard — otherwise its creator wouldn't have written a
+Now, `useEffect` is hard — otherwise, its creator wouldn't have written a
 [gazillion-line blog post](https://overreacted.io/a-complete-guide-to-useeffect/)
 about it — and you probably don't understand very well why you have to put that
 empty array as a second argument. You know, though, that if you don't the
 counter does not seem to refresh with every new cat you pass it as an argument.
-You have a thin knowledge about this piece of your code, and this is a problem.
+You have a thin knowledge of this piece of your code, and this is a problem.
 
 As a rule, do not try to hide your knowledge gaps in code. You'll open
 yourself to getting a question you will be playing guessing games against.
@@ -196,34 +196,34 @@ const CatCounter = ({ cat }) => {
 
 ```
 
-Communicating lack of knowledge is also knowledge communication.
+Communicating a lack of knowledge is also knowledge communication.
 
 You are admitting your knowledge gap, implying you know this is a problem but
 had to move on with it, and announcing your intention to fix it. It shows
 self-awareness, curiosity and the drive to improve; the kind of potential we
-look for in candidates at this level. It's not a simple "I don't know", which
-would be lazy, it's a reasonable utilitarian argument that tacitly admits a
+look for in candidates at this level. It’s not a simple “I don’t know”, which
+would be lazy, it’s a reasonable utilitarian argument that tacitly admits
 failure of understanding.
 
 At this point, the interviewer can do little more than ask if you had time to
 follow on your investigation which, given the circumstances, is an excellent
 outcome.
 
-_Addendum #2: Of course, if your exercise contains many comments like these you should
-reconsider whether you are ready to apply for the job. Nevertheless, do not be
-afraid to admit gray areas in your understanding._
+_Addendum #2: Of course, if your exercise contains many comments like these you
+should reconsider whether you are ready to apply for the job. Nevertheless, do
+not be afraid to admit gray areas in your understanding._
 
 ## Wrapping up
 
-Most entry-level candidates are very similar, and it's highly unlikely you'll be
+Most entry-level candidates are very similar, and it’s highly unlikely you’ll be
 the exception. Instead, focus on deep knowledge vs thin understanding, specially
-about those concepts you know you might get questioned about. If you can, don't
-answer only with "I don't know" but don't play guessing games either, state your
+about those concepts you know you might get questioned about. If you can, don’t
+answer only with “I don’t know” but don’t play guessing games either, state your
 knowledge gaps, what you think you know about them, and how you plan to improve
 on these gray areas.
 
-There's many more aspects we could explore in preparation for your first tech
+There are many more aspects we could explore in preparation for your first tech
 interviews, but these are the foundational aspects all candidates should be aware
 of. The rest, we'll explain in upcoming entries.
 
-Cheers, and good luck at your next interview.
+Cheers, and good luck in your next interview.
