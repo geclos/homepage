@@ -26,7 +26,7 @@ The recruitment process is simple: two interviews, one more generic _let's-meet_
 type of interview, and another more technical. After the second meeting, you
 either get rejected or get a job offer.
 
-The first interview is mostly innocuous: an opportunity for us and the candidate
+The first meeting is mostly innocuous: an opportunity for us and the candidate
 to assess whether we are a good match. The only piece of advice I can give you
 at this point is to be honest, not be a jerk and ask as many questions as you
 can. Ideally, you want to leave this encounter convinced whether you want this
@@ -38,7 +38,7 @@ exercise that will require from you to write a representative chunk of your own
 code. If you are prolific enough, we will gladly accept another program you
 might have already developed. The second interview basically consists of you
 going through your own code with some devs from our tech team. You'll get asked
-technical questions about your submission and some more general aspects if the
+technical questions about your submission and some more general aspects, if the
 conversation takes us down that path.
 
 The purpose of this exercise is many-fold, from evaluating general technical
