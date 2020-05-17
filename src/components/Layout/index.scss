@@ -31,7 +31,6 @@ main {
   padding: 0 get('dimensions.s32');
 
   @media (min-width: $media-sm) {
-    padding: 0;
     margin: get('dimensions.s64') auto 0;
   }
 }
