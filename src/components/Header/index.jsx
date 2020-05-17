@@ -1,7 +1,7 @@
-import Link from 'src/components/Link'
 import PropTypes from 'prop-types'
 import React from 'react'
 import cn from 'classnames/bind'
+import { Link } from 'gatsby'
 
 import styles from './index.module.scss'
 
@@ -16,9 +16,7 @@ const Header = ({ home }) => {
         <span className={styles.separator}>
           ·
         </span>
-        <a className={styles.noDecoration} href='/rss.xml'>
-          RSS
-        </a>
+        <a href='/rss.xml'>RSS</a>
       </div>
     </div>
   )
