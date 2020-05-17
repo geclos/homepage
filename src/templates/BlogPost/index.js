@@ -18,7 +18,9 @@ const BlogPostTemplate = ({ data, location }) => {
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
       />
+
       <Header home />
+
       <article className={styles.article}>
         <header>
           <h1 className={styles.title}>
@@ -29,6 +31,12 @@ const BlogPostTemplate = ({ data, location }) => {
           </p>
         </header>
         <section dangerouslySetInnerHTML={{ __html: post.html }} />
+
+        <footer className={styles.footer}>
+          <hr />
+          Like what you've read? Subscribe to this blog <a href='/rss.xml'>via RSS</a> or follow
+          me on <a href='https://twitter.com/geclos'>Twitter</a> for more similar content.
+        </footer>
       </article>
 
       <Footer />
