@@ -1,10 +1,11 @@
 import Footer from 'src/components/Footer'
+import Header from 'src/components/Header'
 import Layout from "src/components/Layout"
+import Nav from './Nav'
 import Posts from 'src/components/Posts'
 import PropTypes from 'prop-types'
 import React from "react"
 import SEO from "src/components/seo"
-import Nav from './Nav'
 import { graphql } from "gatsby"
 
 const Index = ({ data, pageContext }) => {
@@ -13,6 +14,7 @@ const Index = ({ data, pageContext }) => {
   return (
     <Layout>
       <SEO title="Gerard Clos - Homepage" />
+      <Header />
       <Posts posts={data.allMarkdownRemark.edges} />
       <Nav numPages={numPages} currentPage={currentPage} />
       <Footer />

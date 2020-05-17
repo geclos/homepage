@@ -1,0 +1,24 @@
+$media-md: 960px;
+
+.root {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 0 0 get('dimensions.s24') 0;
+
+  @media (min-width: $media-md) {
+    margin: 0 get('dimensions.s32') get('dimensions.s32') 0;
+  }
+
+  &.home {
+    justify-content: space-between;
+  }
+
+  .separator {
+    margin: 0 get('dimensions.s4');
+  }
+
+  .noDecoration {
+    text-decoration: none;
+  }
+}

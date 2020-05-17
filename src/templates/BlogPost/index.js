@@ -1,9 +1,10 @@
 import Footer from 'src/components/Footer'
+import Header from 'src/components/Header'
 import Layout from "src/components/Layout"
 import PropTypes from 'prop-types'
 import React from "react"
 import SEO from "src/components/seo"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 
 import styles from './index.module.scss'
 
@@ -17,12 +18,8 @@ const BlogPostTemplate = ({ data, location }) => {
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
       />
+      <Header home />
       <article className={styles.article}>
-        <div className={styles.pre}>
-          <Link to='/'>
-            Home
-          </Link>
-        </div>
         <header>
           <h1 className={styles.title}>
             {post.frontmatter.title}

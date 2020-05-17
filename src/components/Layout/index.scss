@@ -1,5 +1,6 @@
 $media-xs: 480px;
 $media-sm: 768px;
+$media-md: 960px;
 
 * {
   -webkit-box-sizing: border-box;
@@ -32,6 +33,10 @@ main {
 
   @media (min-width: $media-sm) {
     margin: get('dimensions.s64') auto 0;
+  }
+
+  @media (min-width: $media-md) {
+    padding: 0;
   }
 }
 

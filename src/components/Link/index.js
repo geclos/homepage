@@ -5,7 +5,15 @@ import PropTypes from 'prop-types'
 
 import styles from './index.module.scss'
 
-function LinkComponent ({ to, style = {}, children }) {
+function LinkComponent ({ href, to, style = {}, children }) {
+  if (href) {
+    return (
+      <Link style={style} className={styles.root} href={href}>
+        {children}
+      </Link>
+    )
+  }
+
   return (
     <Link style={style} className={styles.root} to={to}>
       {children}
@@ -14,6 +22,7 @@ function LinkComponent ({ to, style = {}, children }) {
 }
 
 LinkComponent.propTypes = {
+  href: PropTypes.string,
   to: PropTypes.string,
   style: PropTypes.object,
   children: PropTypes.node
