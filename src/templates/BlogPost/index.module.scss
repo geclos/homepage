@@ -22,11 +22,13 @@
 
   hr {
     &:before {
-      content: '*   *   *   *';
+      content: '* * *';
     }
 
     border: none;
+    color: get('colors.gray.s600');
     margin: get('dimensions.s32') 0;
     padding: 0;
+    text-align: center;
   }
 }
