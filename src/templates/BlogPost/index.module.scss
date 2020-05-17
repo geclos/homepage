@@ -19,4 +19,14 @@
   h2 {
     margin: get('dimensions.s64') 0 get('dimensions.s16');
   }
+
+  hr {
+    &:before {
+      content: '*   *   *   *';
+    }
+
+    border: none;
+    margin: get('dimensions.s32') 0;
+    padding: 0;
+  }
 }
