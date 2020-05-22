@@ -1,14 +1,6 @@
 import Bio from '../Bio'
 import React from 'react'
-import Separator from '../Separator'
 
-const Footer = () => {
-  return (
-    <div>
-      <Separator />
-      <Bio />
-    </div>
-  )
-}
+const Footer = () => <Bio />
 
 export default Footer

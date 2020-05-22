@@ -1,0 +1,15 @@
+.root {
+  margin-bottom: get('dimensions.s32');
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: get('media.xs')) {
+    margin-bottom: get('dimensions.s48');
+  }
+
+  @media (min-width: get('media.xs')) {
+    margin-bottom: get('dimensions.s64');
+  }
+}

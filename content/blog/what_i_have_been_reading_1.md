@@ -4,17 +4,19 @@ date: "2020-05-17"
 description: "New series of good reads from the last 2 weeks to fill up your Sunday."
 ---
 
+**UPDATE (23/05/2020):** Given the success of this post I'm making it into a
+[weekly newsletter](/newsletter): The best reads from the week about big ideas
+to understand the world better, delivered to you every Sunday morning. Subscribe!
+
+* * *
 In the vein of [Tyler
 Cowen's](https://marginalrevolution.com/?s=what+i%27ve+been+reading) or [Arnold
 King's](Arnold King's), I'm starting this series of posts that will go over my
 best reads from the last two weeks, with short commentary to give you the
 highlights. You can also find these articles, and some others, if you follow me
-on [Twitter](https://twitter.com/geclos), where I publish the best I read
-every day.
+on [Twitter](https://twitter.com/geclos), where I publish the best I read every
+day.
 
-This will be a bi-weekly publication, but don't quote me on that.
-
-* * *
 
 [Studies on Slack](https://t.co/MVyjspRnMZ?amp=1), a great example of how
 abstract principles apply to seemingly unconnected phenomena: from competitive

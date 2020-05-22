@@ -9,6 +9,12 @@ I'm Gerard 👋, Software Engineer, infovore, and aspirant polymath.
 I've been writing on the internet since circa 2009. This blog is my attempt to
 organize and share the best ideas that stem from all my readings.
 
+I also curate a newsletter: the Big Ideas Weekly, where every Sunday morning I
+share the best reads from the week about big ideas to understand to world
+better.
+
+#### Why should I care?
+
 I'm particularly interested in all-encompassing ideas: short, easy-to-digest
 concepts that explain an interesting piece of the universe we live in.
 
@@ -18,9 +24,7 @@ oblivious to the world around us. It's a weapon against entropy.
 
 So, expect lots of entropy-fighting.
 
-You can follow me on [Twitter](https://twitter.com/geclos), where I
-share the best I read, on [Github](https://github.com/geclos), to check out my
-work, or you can try [Factorial](https://factorialhr.com), which is the company
-I've helped build in the last 4 years.
+Cheers,
+G.
 
 [Take me home.](/)

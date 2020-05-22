@@ -1,5 +1,3 @@
-$media-sm: 768px;
-
 .link {
   margin: 0 get('dimensions.s8');
 
@@ -7,7 +5,7 @@ $media-sm: 768px;
     width: 24px;
     height: 24px;
 
-    @media (min-width: $media-sm) {
+    @media (min-width: get('media.sm')) {
       width: 32px;
       height: 32px;
     }

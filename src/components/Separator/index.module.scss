@@ -1,18 +1,19 @@
 .separator {
-  border-radius: 3px;
-  background: get('colors.gray.s600');
-  height: get('dimensions.s4');
-  width: 15%;
-
-  &.small {
-    margin: get('dimensions.s32') 0 get('dimensions.s16');
+  &:before {
+    content: '* * *';
   }
 
-  &.medium {
-    margin: get('dimensions.s48') 0 get('dimensions.s24');
+  color: get('colors.gray.s600');
+  padding: 0;
+  text-align: center;
+
+  margin: get('dimensions.s32') 0;
+
+  @media (min-width: get('media.xs')) {
+    margin: get('dimensions.s48') 0;
   }
 
-  &.large {
-    margin: get('dimensions.s64') 0 get('dimensions.s32');
+  @media (min-width: get('media.sm')) {
+    margin: get('dimensions.s64') 0;
   }
 }
