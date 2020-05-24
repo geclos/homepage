@@ -1,5 +1,5 @@
 ---
-title: Propositional and Procedural knowledge in innovative institutions
+title: Propositional and Procedural innovation
 date: "2020-05-24"
 description: "Knowledge can be categorized in two types. This separation
 gives us new perspectives on innovation."
