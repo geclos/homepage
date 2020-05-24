@@ -32,7 +32,7 @@ const BlogPostTemplate = ({ data, location }) => {
         </header>
         <section dangerouslySetInnerHTML={{ __html: post.html }} />
 
-        <footer className={styles.footer}>
+        <footer>
           <hr />
           Like what you've read? Subscribe to this blog <a href='/rss.xml'>via RSS</a> or follow
           me on <a href='https://twitter.com/geclos'>Twitter</a> for more similar content.
