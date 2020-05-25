@@ -1,11 +1,13 @@
-import Footer from 'src/components/Footer'
+import Bio from 'src/components/Bio'
 import Header from 'src/components/Header'
 import Layout from "src/components/Layout"
 import Nav from './Nav'
+import Newsletter from 'src/components/Newsletter'
 import Posts from 'src/components/Posts'
 import PropTypes from 'prop-types'
 import React from "react"
 import SEO from "src/components/seo"
+import Separator from 'src/components/Separator'
 import { graphql } from "gatsby"
 
 const Index = ({ data, pageContext }) => {
@@ -17,7 +19,10 @@ const Index = ({ data, pageContext }) => {
       <Header />
       <Posts posts={data.allMarkdownRemark.edges} />
       <Nav numPages={numPages} currentPage={currentPage} />
-      <Footer />
+      <Separator />
+      <Newsletter />
+      <Separator />
+      <Bio />
     </Layout>
   )
 }

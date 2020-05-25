@@ -1,9 +1,9 @@
+import Box from 'src/components/Box'
+import Header from 'src/components/Header'
 import Layout from "src/components/Layout"
 import React from "react"
 import SEO from "src/components/seo"
 import { useStaticQuery, graphql } from "gatsby"
-
-import styles from './index.module.scss'
 
 const query = graphql`
   query {
@@ -31,9 +31,10 @@ const About = () => {
   return (
     <Layout>
       <SEO title="Gerard Clos - About" />
-      <div className={styles.root}>
-        <div className={styles.content} dangerouslySetInnerHTML={{ __html: html }}  />
-      </div>
+      <Header home />
+      <Box>
+        <div dangerouslySetInnerHTML={{ __html: html }}  />
+      </Box>
     </Layout>
   )
 }

@@ -1,0 +1,18 @@
+.root {
+  border: 3px solid get('colors.gray.s100');
+  box-shadow: 4px 4px 0 get('colors.gray.s100');
+
+  padding: get('dimensions.s24');
+
+  @media (min-width: get('media.xs')) {
+    padding: get('dimensions.s32');
+  }
+
+  @media (min-width: get('media.sm')) {
+    padding: get('dimensions.s48');
+  }
+
+  @media (min-width: get('media.md')) {
+    padding: get('dimensions.s64');
+  }
+}

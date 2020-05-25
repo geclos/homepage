@@ -9,7 +9,7 @@ const Sizes = {
   large: 'large'
 }
 
-const Separator = ({ size = Sizes.large }) =>
+const Separator = ({ size = Sizes.medium }) =>
   <div className={`${styles.separator} ${styles[size]}`} />
 
 Separator.propTypes = {

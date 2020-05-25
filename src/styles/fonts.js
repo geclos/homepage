@@ -10,9 +10,9 @@ module.exports = {
     },
     header: {
       small: {
-        h1: "bold 40px/1.1 'Roboto', sans-serif;",
-        h2: "bold 32px/1.1 'Roboto', sans-serif;",
-        h3: "bold 24px/1.30 'Roboto', sans-serif;"
+        h1: "bold 32/1.1 'Roboto', sans-serif;",
+        h2: "bold 24px/1.1 'Roboto', sans-serif;",
+        h3: "bold 16px/1.30 'Roboto', sans-serif;"
       },
       medium: {
         h1: "bold 40px/1.25 'Roboto', sans-serif;",
