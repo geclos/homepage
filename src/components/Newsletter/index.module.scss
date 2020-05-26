@@ -33,6 +33,10 @@
     }
 
     input[type='submit'] {
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+
       background: get('colors.primary.s400');
       border-radius: 5px;
       border: 2px solid get('colors.primary.s400');
