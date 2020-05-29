@@ -7,7 +7,7 @@ const Newsletter = () => {
   return (
     <Box>
       <article>
-        <h2>Subsribe to the Big Ideas Weekly</h2>
+        <h2>Subscribe to the Big Ideas Weekly</h2>
         <p>
           A no fuzz newsletter with the week's best reads about big ideas to understand the world better, delivered to you every Sunday morning.
           <br />
