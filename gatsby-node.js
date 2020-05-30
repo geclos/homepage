@@ -1,11 +1,8 @@
 const { createFilePath } = require(`gatsby-source-filesystem`)
-const { indexPage, blogPostPage, aboutPage, newsletterPage } = require('./pages')
+const pages = require('./pages')
 
-exports.createPages = async (args) => {
-  aboutPage(args)
-  blogPostPage(args)
-  indexPage(args)
-  newsletterPage(args)
+exports.createPages = (args) => {
+  return Promise.all(pages.map(p => p(args)))
 }
 
 exports.onCreateNode = ({ node, actions, getNode }) => {

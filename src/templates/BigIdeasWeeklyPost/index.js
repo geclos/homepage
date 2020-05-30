@@ -1,46 +1,32 @@
-import Bio from 'src/components/Bio'
 import Header from 'src/components/Header'
 import Layout from "src/components/Layout"
-import Newsletter from 'src/components/Newsletter'
 import Post from 'src/components/Post'
 import PropTypes from 'prop-types'
 import React from "react"
-import SEO from "src/components/seo"
-import Separator from 'src/components/Separator'
 import { graphql } from "gatsby"
 
-const BlogPostTemplate = ({ data, location }) => {
+const BigIdeasWeeklyPostTemplate = ({ data, location }) => {
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata.title
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO
-        title={post.frontmatter.title}
-        description={post.frontmatter.description || post.excerpt}
-      />
-
       <Header home />
 
       <Post post={post} />
-
-      <Separator />
-      <Newsletter />
-      <Separator />
-      <Bio />
     </Layout>
   )
 }
 
-BlogPostTemplate.propTypes = {
+BigIdeasWeeklyPostTemplate.propTypes = {
   data: PropTypes.object,
   location: PropTypes.object
 }
 
-export default BlogPostTemplate
+export default BigIdeasWeeklyPostTemplate
 
 export const pageQuery = graphql`
-  query BlogPostBySlug($slug: String!) {
+  query BigIdeasWeeklyPostBySlug($slug: String!) {
     site {
       siteMetadata {
         title

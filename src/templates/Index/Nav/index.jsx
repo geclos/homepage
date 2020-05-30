@@ -29,7 +29,7 @@ function Nav ({ currentPage, numPages }) {
         </li>
         <li>
           {currentPage > 1 && (
-            <Link to={prevPage > 1 ? `/pages/${prevPage}` : '/'} rel="prev">
+            <Link to={prevPage > 1 ? `pages/${prevPage}` : '/'} rel="prev">
               Newer posts →
             </Link>
           )}
