@@ -7,7 +7,10 @@ import SEO from 'src/components/seo'
 const NewslettePage = () => {
   return (
     <Layout>
-      <SEO title="Big Ideas Weekly - Newsletter" />
+      <SEO
+        title="Big Ideas Weekly - Newsletter"
+        description="The week's best reads about big ideas, delivered every Sunday morning."
+      />
       <Header home />
       <Newsletter />
     </Layout>
