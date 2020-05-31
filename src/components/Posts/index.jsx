@@ -1,15 +1,15 @@
-import Post from './Post'
+import PostComponent from './Post'
 import PropTypes from 'prop-types'
 import React from 'react'
 
 import styles from './index.module.scss'
 
-const Posts = ({ posts }) => {
+const Posts = ({ posts, Post}) => {
   return (
     <div>
       {posts.map(({ node }, i) => (
         <div key={i} className={styles.root}>
-          <Post node={node} />
+          {Post ? <Post node={node} /> : <PostComponent node={node} />}
         </div>
       ))}
     </div>
@@ -17,7 +17,8 @@ const Posts = ({ posts }) => {
 }
 
 Posts.propTypes = {
-  posts: PropTypes.array
+  posts: PropTypes.array,
+  Post: PropTypes.Node
 }
 
 export default Posts
