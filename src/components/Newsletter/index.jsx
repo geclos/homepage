@@ -9,7 +9,7 @@ const Newsletter = () => {
       <article>
         <h2>Subscribe to the Big Ideas Weekly</h2>
         <p>
-          A no fuzz newsletter with the week's best reads about big ideas to understand the world better, delivered to you every Sunday morning.
+          A no fuzz newsletter with the week's best reads about big ideas, delivered to you every Sunday morning.
           <br />
           <br />
           Get <a target='_blank' href='/what_i_have_been_reading_1'>a taste</a> of what you will get.
