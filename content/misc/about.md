@@ -9,10 +9,6 @@ I'm Gerard 👋, Software Engineer, infovore, and aspirant polymath.
 I've been writing on the internet since circa 2009. This blog is my attempt to
 organize and share the best ideas that stem from all my readings.
 
-I also curate a newsletter: the Big Ideas Weekly, where every Sunday morning I
-share the best reads from the week about big ideas to understand to world
-better.
-
 #### Why should I care?
 
 I'm particularly interested in all-encompassing ideas: short, easy-to-digest

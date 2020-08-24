@@ -2,7 +2,6 @@ import Bio from 'src/components/Bio'
 import Header from 'src/components/Header'
 import Layout from "src/components/Layout"
 import Nav from './Nav'
-import Newsletter from 'src/components/Newsletter'
 import Posts from 'src/components/Posts'
 import PropTypes from 'prop-types'
 import React from "react"
@@ -19,8 +18,6 @@ const Index = ({ data, pageContext }) => {
       <Header />
       <Posts posts={data.allMarkdownRemark.edges} />
       <Nav numPages={numPages} currentPage={currentPage} />
-      <Separator />
-      <Newsletter />
       <Separator />
       <Bio />
     </Layout>

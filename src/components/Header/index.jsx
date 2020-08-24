@@ -12,10 +12,6 @@ const Header = ({ home }) => {
     <div className={cx('root', { home })}>
       {home && <Link to='/'>Home</Link>}
       <div>
-        <Link to='/newsletter'>Newsletter</Link>
-        <span className={styles.separator}>
-          ·
-        </span>
         <Link to='/about'>About</Link>
         <span className={styles.separator}>
           ·

@@ -1,7 +1,6 @@
 import Bio from 'src/components/Bio'
 import Header from 'src/components/Header'
 import Layout from "src/components/Layout"
-import Newsletter from 'src/components/Newsletter'
 import Post from 'src/components/Post'
 import PropTypes from 'prop-types'
 import React from "react"
@@ -19,13 +18,8 @@ const BlogPostTemplate = ({ data, location }) => {
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
       />
-
       <Header home />
-
       <Post post={post} />
-
-      <Separator />
-      <Newsletter />
       <Separator />
       <Bio />
     </Layout>
