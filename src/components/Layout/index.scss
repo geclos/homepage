@@ -41,6 +41,19 @@ p {
   }
 }
 
+.footnotes {
+  font: get('fonts.family.small');
+
+  p {
+    display: inline;
+    margin-bottom: 0
+  }
+
+  ol > li {
+    margin-bottom: get('dimensions.s16');
+  }
+}
+
 a {
   color: get('colors.primary.s400');
 }
