@@ -9,8 +9,6 @@ I'm Gerard 👋, Software Engineer, infovore, and aspirant polymath.
 I've been writing on the internet since circa 2009. This blog is my attempt to
 organize and share the best ideas that stem from all my readings.
 
-#### Why should I care?
-
 I'm particularly interested in all-encompassing ideas: short, easy-to-digest
 concepts that explain an interesting piece of the universe we live in.
 
