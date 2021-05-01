@@ -22,10 +22,11 @@ module.exports = async ({ graphql, actions }) => {
     `
   )
 
+
   if (result.errors) throw result.errors
 
   const posts = result.data.allMarkdownRemark.edges
-  const postsPerPage = 8
+  const postsPerPage = 30
   const numPages = Math.ceil(posts.length / postsPerPage)
 
   Array.from({ length: numPages }).forEach((_, i) => {

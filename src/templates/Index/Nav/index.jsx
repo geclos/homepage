@@ -5,9 +5,9 @@ import { Link } from "gatsby"
 import styles from './index.module.scss'
 
 function Nav ({ currentPage, numPages }) {
-  const prevPage = currentPage - 1
+  if (!numPages) return null
 
-  if (!prevPage) return null
+  const prevPage = currentPage - 1
 
   return (
     <nav className={styles.nav}>
