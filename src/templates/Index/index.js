@@ -1,5 +1,4 @@
 import Bio from 'src/components/Bio'
-import Header from 'src/components/Header'
 import Layout from "src/components/Layout"
 import Nav from './Nav'
 import Posts from 'src/components/Posts'
@@ -9,17 +8,20 @@ import SEO from "src/components/seo"
 import Separator from 'src/components/Separator'
 import { graphql } from "gatsby"
 
+import styles from './index.module.scss'
+
 const Index = ({ data, pageContext }) => {
   const { numPages, currentPage } = pageContext
 
   return (
     <Layout>
       <SEO title="Gerard Clos - Homepage" />
-      <Header />
+      <div className={styles.bio}>
+        <Bio />
+      </div>
+      <Separator />
       <Posts posts={data.allMarkdownRemark.edges} />
       <Nav numPages={numPages} currentPage={currentPage} />
-      <Separator />
-      <Bio />
     </Layout>
   )
 }
