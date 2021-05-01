@@ -1,7 +1,5 @@
 .bio {
-  @media (min-width: get('media.xs')) {
-    margin: get('dimensions.s32') 0 0;
-  }
+  margin: get('dimensions.s32') 0 0;
 
   @media (min-width: get('media.sm')) {
     margin: get('dimensions.s48') 0 0;

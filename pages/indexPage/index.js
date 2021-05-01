@@ -22,7 +22,6 @@ module.exports = async ({ graphql, actions }) => {
     `
   )
 
-
   if (result.errors) throw result.errors
 
   const posts = result.data.allMarkdownRemark.edges
