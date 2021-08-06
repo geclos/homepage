@@ -40,12 +40,3 @@ from another species, and for whom my primate brain is not in close competition
 for the approval of the same peer group.
 
 FOMO is the other side of the competition coin: No competition, no FOMO.
-
-## Do women feel the same FOMO than men?
-My sense is they don't. In other social species females compete to get males,
-whereas males compete to get to the top of the group... in order to get females.
-That crucial middle step is the one that makes males compete in more dimensions
-than females.
-
-I have the sense some of this also happens in humans, albeit with
-all the exceptions and many more nuances that our big brains entail.
