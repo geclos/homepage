@@ -17,7 +17,7 @@ Of course, this line of reasoning leads to more questions.
 The short answer is because it's good for reproductive selection. Social groups
 are essentially status power plays where the individual with more status is the
 one that hooks with the best, with the most, or both. Stretch this behaviour
-over aeons and you get present-day human behaviour.
+over eons and you get present-day human behaviour.
 
 Why do we keep feeling pressured to conform to the group after we have
 reproduced? Again, because it helps maximise our reproductive chances -- the
