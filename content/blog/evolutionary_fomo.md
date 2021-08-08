@@ -1,7 +1,7 @@
 ---
 title: The biology of FOMO
 date: "2021-08-06"
-description: "Some explorations on the biology of FOMO"
+description: "Some explorations on the biology of FOMO."
 ---
 
 Why do we fear missing out?
