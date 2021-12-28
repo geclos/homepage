@@ -1,0 +1,74 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="My personal space on the internet.">
+  <meta name="author" content="Gerard Clos">
+  <link rel="shortcut icon" href="img/favicon.png">
+  <title>Gerard Clos</title>
+  <style>
+    html {
+      color: black;
+      font-size: 16px;
+      line-height: 1.5;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    a {
+      color: black;
+    }
+
+    #main {
+      display: flex; 
+      align-items: center; 
+      justify-content: center; 
+      height: 100%;
+    }
+
+    #container {
+      display: flex; 
+      justify-content: center; 
+      min-width: 468px;
+    }
+
+    #bio-container {
+      max-width: 300px
+    }
+
+    #separator {
+      min-width: 1px; 
+      margin: 0 1em; 
+      background: black;
+    }
+
+    #list-container {
+      display: flex; 
+      align-items: center;
+    }
+
+    #list {
+      list-style-type: none; 
+      padding: 0;
+    }
+    </style>
+  </head>
+<body>
+  <section id='main'>
+    <section id='container'>
+      <section id='bio-container'>
+        <article>
+          <p>Hi there 👋, I’m Gerard, software engineer at Shopify. I write about big ideas, tech, and more.</p>
+        </article>
+      </section>
+      <div id='separator'></div>
+      <section id='list-container'>
+        <ul id='list'>
+          <li><a target="_blank" href="https://geclos.substack.com">Newsletter</a></li>
+          <li><a target="_blank" href="https://twitter.com/geclos">Twitter</a></li>
+        </ul>
+      </section>
+    </section>  
+  </section>
+</body>
+</html>
