@@ -8,7 +8,7 @@
     "build": "astro build",
     "preview": "astro preview",
     "check": "astro check",
-    "prepare": "husky"
+    "prepare": "simple-git-hooks"
   },
   "dependencies": {
     "@astrojs/mdx": "^3.0.0",
@@ -17,10 +17,14 @@
     "astro": "^4.16.0"
   },
   "devDependencies": {
+    "@astrojs/check": "^0.9.6",
     "autoprefixer": "^10.4.19",
-    "husky": "^9.0.11",
     "postcss": "^8.4.38",
+    "simple-git-hooks": "^2.12.1",
     "tailwindcss": "^3.4.10",
     "typescript": "^5.5.4"
+  },
+  "simple-git-hooks": {
+    "pre-push": "npm run -s check && npm run -s build"
   }
 }

@@ -10,11 +10,10 @@ Astro-based personal site with an MDX blog.
 
 ## Git hooks
 
-This repo uses a `pre-push` hook (via Husky) to run `npm run check` + `npm run build` before pushing.
+This repo uses a `pre-push` hook (via `simple-git-hooks`) to run `npm run check` + `npm run build` before pushing.
 
 To bypass in a pinch:
 - `git push --no-verify`
-- `HUSKY=0 git push`
 
 ## Add a blog post
 

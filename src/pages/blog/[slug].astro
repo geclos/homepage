@@ -6,7 +6,11 @@ export async function getStaticPaths() {
   const posts = await getCollection('blog');
 
   return posts.map((post) => {
-    const slug = post.data.slug ?? post.slug;
+    const frontmatterSlug =
+      typeof post.data.slug === 'string' && post.data.slug.trim()
+        ? post.data.slug.trim()
+        : undefined;
+    const slug = frontmatterSlug ?? post.slug;
     return {
       params: { slug },
       props: { post }

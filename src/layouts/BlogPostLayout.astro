@@ -9,6 +9,8 @@ const {
   tags = [],
   heroImage
 } = Astro.props;
+
+const safeTags = Array.isArray(tags) ? (tags as string[]) : [];
 ---
 
 <BaseLayout title={title} description={description ?? 'Blog post by Gerard Clos.'}>
@@ -21,9 +23,9 @@ const {
           {description}
         </p>
       )}
-      {tags.length > 0 && (
+      {safeTags.length > 0 && (
         <ul class="flex flex-wrap gap-2 text-xs uppercase tracking-[0.18em] text-muted">
-          {tags.map((tag) => (
+          {safeTags.map((tag: string) => (
             <li class="border border-line px-2 py-1">{tag}</li>
           ))}
         </ul>

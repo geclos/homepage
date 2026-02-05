@@ -1,0 +1,89 @@
+---
+title: "AI Is a Force Multiplier and a Price Compressor"
+date: 2026-01-23
+heroImage: "https://images.fika.bar/post/01KFNQW8XAJRFR1BA7V3VG04K1/e6ac43fc266e058d5c7240e1a445fa75/fofo.jpeg?"
+tags: ["ai", "engineering"]
+slug: "ai-is-a-force-multiplier-and-a-price-compressor"
+---
+A useful way to think about today’s AI tooling is this: it doesn’t eliminate engineering work, it changes its economics.
+
+For many teams, the most visible effect of AI is a straightforward increase in productivity: Tasks that used to take an afternoon can now be scaffolded in a few minutes, PMs can contribute to the codebase, RFCs take less time to investigate and write. Heck, I currently have 4/5 Claude instances doing work in parallel while I write this.
+
+This doesn’t mean, however, the organization suddenly needs fewer engineers. What happens next depends less on model capability and more on incentives: what do companies do when the cost of producing software drops?
+
+## Productivity Gains Don’t Automatically Translate to Fewer Engineers
+
+Software development is a pipeline with multiple bottlenecks: product definition, design, implementation, review, testing, deployment, operations, support, and iteration. AI accelerates implementation (and parts of review/testing) much more than it accelerates everything else.
+
+So even if “writing code” gets 5–10× faster, end-to-end throughput won’t be 5–10× faster unless the rest of the pipeline scales with it. In practice, teams often discover new bottlenecks quickly:
+
+- Code review becomes the scarce resource (humans still have to decide what is acceptable).
+- Integration and regression risk dominates (more PRs means more surface area).
+- Requirements become the hard part (if you can build anything quickly, picking the right thing matters more).
+- Reliability and security work grows with change volume.
+
+_AI makes engineers more productive_ is true, and still compatible with _we need more engineers_.
+
+## Why Many Companies Will Choose to Produce More (When They Can)
+
+If you reduce the cost of producing something and there is unmet demand for that thing, producers usually don’t stop at the same output, but with lower costs. They expand output until they hit the next constraint.
+
+That’s true especially of software, which has unusually elastic demand:
+
+- There is always a backlog: internal tools, customer requests, edge-case fixes, quality improvements, migrations, observability, tech debt, new platforms.
+- The optionality is huge: shipping one small feature can unlock new workflows or revenue streams, and it’s often hard to predict which one will matter.
+- Experimentation becomes cheaper: when the first version is fast, you can try more ideas before you commit.
+
+This is the [Jevons paradox](https://en.wikipedia.org/wiki/Jevons_paradox)in full effect: efficiency gains get reinvested into doing more, not merely spending less, because the marginal price of software just went down, and demand shoot up _[1]_.
+
+Beware though, I’m not saying "costs never go down." In saturated products, during cost-cutting cycles, or when teams are operationally overloaded, companies absolutely will choose to reduce spend.
+
+But as long as software output remains a growth lever, efficiency gains will tend to expand scope, not cut it.
+
+## The Other Side: AI Compresses the Price of Many Engineering Tasks
+
+Even if total demand stays high, AI changes who can do what, and that affects what the market will pay for, and how you should adapt. Two forces matter most.
+
+**1) Lowered entry barriers change the division of labor**
+
+When non-engineers can reliably produce small pieces of working code—scripts, SQL, API calls, glue logic, minor UI changes—some work that previously required an engineer becomes "good enough" to be done by someone else.
+
+This doesn’t remove the need for engineering; it removes the need for engineering time on certain slices of work. This slice used to be a lot of what junior engineers and contractors did. If non-engineers can cover some of it and senior engineers can draft the rest faster with AI, the equilibrium price trends down.
+
+**2) Agent-generated code quality is rising, and it's improving the baseline**
+
+Even when humans remain in the loop, the “default quality” of AI-generated work is climbing because of two main factors: pure improvements in AI models (recent examples include Opus 4.5 and Codex 5.2) and better surrounding ecosystem.
+
+Software companies are getting better at operating AIs as part of an integrated system with faster control signals:
+
+- IDE integration and repo-context retrieval
+- Better browser integration
+- LSP type checking and linting as guardrails
+- Stronger unit/integration test generation
+- Coding standards baked into prompts via agent skills and
+
+[AGENTS.md](http://AGENTS.md)
+
+All these help improve the baseline quality of what AI can write, and when baseline implementation quality goes up and the cost per change goes down, routine coding becomes more commoditized _[2]_.
+
+## Where the Remaining Premium Lives
+
+The work that keeps its pricing power tends to have at least one of these properties:
+
+- The goal is ambiguous or evolving (“what should we build?” not “implement X”).
+- The risk is high (security, safety, compliance, financial correctness).
+- The system is complex and coupled (distributed systems, legacy migrations, performance constraints).
+- The feedback loop is slow or expensive (production-only bugs, scaling issues, data correctness).
+- The job is socio-technical (coordination, incident leadership, stakeholder tradeoffs, ownership).
+
+AI can assist in all of these, but assistance is different from replacement. The core value is in the human making and owning decisions under uncertainty.
+
+In practice, this means AI has pushed what companies will value from software engineers. They will value engineers who can define constraints that steer AI towards the better path. They will value engineers who can reason about systems, not just code. They will value teams that can absorb higher change volume without increasing failure rates.
+
+AI is likely to expand total software output while compressing the price of many "write code to spec" tasks. Engineers won’t disappear, but the premium moves from producing code to producing outcomes.
+
+_[1] Competitive pressure reinforces this effect. If your competitors can ship faster and iterate more cheaply, "hold output constant and pocket the savings" is often not a stable equilibrium._
+
+_[2] Commoditization doesn’t mean “no value.” It means the price premium for simply producing working code declines because more people (and tools) can supply it._
+
+_Co-written with GPT-5.2_
