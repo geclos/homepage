@@ -1,0 +1,66 @@
+---
+import '../styles/global.css';
+
+const {
+  title = 'Gerard Clos',
+  description = 'Personal space on the internet.'
+} = Astro.props;
+
+const siteTitle = 'Gerard Clos';
+const pageTitle = title === siteTitle ? siteTitle : `${title} · ${siteTitle}`;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <link rel="icon" href="/img/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:opsz,wght@8..144,400;8..144,500;8..144,600&family=Inter+Tight:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>{pageTitle}</title>
+  </head>
+  <body class="bg-sand text-ink">
+    <div class="min-h-screen">
+      <header class="border-b border-line">
+        <div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-6">
+          <a href="/" class="font-serif text-xl tracking-tight no-underline">
+            Gerard Clos
+          </a>
+          <nav class="flex items-center gap-6 text-sm text-muted">
+            <a href="/blog" class="no-underline">
+              Blog
+            </a>
+            <a
+              href="https://twitter.com/geclos"
+              class="no-underline"
+              target="_blank"
+              rel="noopener"
+            >
+              Twitter
+            </a>
+          </nav>
+        </div>
+      </header>
+
+      <main class="mx-auto w-full max-w-6xl px-6 py-12">
+        <slot />
+      </main>
+
+      <footer class="border-t border-line">
+        <div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-6 text-xs text-muted">
+          <span>Copyright {new Date().getFullYear()} Gerard Clos</span>
+          <a href="/blog" class="no-underline">
+            Blog index
+          </a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Gerard Clos" description="Personal website and blog.">
+  <section class="grid gap-10 border-t border-line pt-12 md:grid-cols-[1.4fr_0.8fr]">
+    <div class="space-y-6">
+      <div class="eyebrow">Personal notes</div>
+      <h1 class="font-serif text-4xl leading-tight md:text-5xl">
+        Big ideas, technology, and systems.
+      </h1>
+      <p class="max-w-xl text-base text-muted">
+        Hi, I am Gerard, CTO at Latitude. I write about product, engineering, and
+        the ways AI is changing how we build.
+      </p>
+    </div>
+    <div class="border-l border-line pl-6 text-sm text-muted">
+      <div class="space-y-3">
+        <a href="/blog" class="no-underline">Blog</a>
+        <a
+          href="https://twitter.com/geclos"
+          class="no-underline"
+          target="_blank"
+          rel="noopener"
+        >
+          Twitter
+        </a>
+        <a
+          href="https://latitude.so"
+          class="no-underline"
+          target="_blank"
+          rel="noopener"
+        >
+          Latitude
+        </a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

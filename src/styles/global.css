@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply bg-sand text-ink;
+  }
+
+  body {
+    @apply min-h-screen bg-sand text-ink font-sans antialiased;
+  }
+
+  a {
+    @apply text-current underline decoration-[0.06em] underline-offset-4 transition-colors;
+  }
+
+  a:hover {
+    @apply text-accent;
+  }
+}
+
+@layer components {
+  .eyebrow {
+    @apply text-xs uppercase tracking-wideish text-muted;
+  }
+
+  .divider {
+    @apply h-px w-full bg-line;
+  }
+
+  .surface {
+    @apply bg-paper border border-line;
+  }
+}
