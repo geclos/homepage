@@ -28,8 +28,8 @@ const pageTitle = title === siteTitle ? siteTitle : `${title} · ${siteTitle}`;
   </head>
   <body class="bg-sand text-ink">
     <div class="min-h-screen">
-      <header class="border-b border-line">
-        <div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-6">
+      <header>
+        <div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-10">
           <a href="/" class="font-serif text-xl tracking-tight no-underline">
             Gerard Clos
           </a>
@@ -49,18 +49,9 @@ const pageTitle = title === siteTitle ? siteTitle : `${title} · ${siteTitle}`;
         </div>
       </header>
 
-      <main class="mx-auto w-full max-w-6xl px-6 py-12">
+      <main class="mx-auto w-full max-w-6xl px-6 pb-20">
         <slot />
       </main>
-
-      <footer class="border-t border-line">
-        <div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-6 text-xs text-muted">
-          <span>Copyright {new Date().getFullYear()} Gerard Clos</span>
-          <a href="/blog" class="no-underline">
-            Blog index
-          </a>
-        </div>
-      </footer>
     </div>
   </body>
 </html>

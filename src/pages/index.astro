@@ -1,38 +1,52 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+import { formatDate } from '../utils/formatDate';
+
+const posts = (await getCollection('blog'))
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
+  .slice(0, 3);
 ---
 
 <BaseLayout title="Gerard Clos" description="Personal website and blog.">
-  <section class="grid gap-10 border-t border-line pt-12 md:grid-cols-[1.4fr_0.8fr]">
-    <div class="space-y-6">
-      <div class="eyebrow">Personal notes</div>
-      <h1 class="font-serif text-4xl leading-tight md:text-5xl">
-        Big ideas, technology, and systems.
-      </h1>
-      <p class="max-w-xl text-base text-muted">
-        Hi, I am Gerard, CTO at Latitude. I write about product, engineering, and
-        the ways AI is changing how we build.
+  <section class="mx-auto max-w-3xl pt-10 md:pt-14">
+    <div class="space-y-10">
+      <p class="max-w-2xl text-base leading-relaxed text-muted md:text-lg">
+        Hi, I am Gerard, CTO at Latitude. I write about product, engineering,
+        and the ways AI is changing how we build.
       </p>
-    </div>
-    <div class="border-t border-line pt-6 text-sm text-muted md:border-t-0 md:border-l md:pl-6 md:pt-0">
-      <div class="space-y-3">
-        <a href="/blog" class="no-underline">Blog</a>
-        <a
-          href="https://twitter.com/geclos"
-          class="no-underline"
-          target="_blank"
-          rel="noopener"
-        >
-          Twitter
-        </a>
-        <a
-          href="https://latitude.so"
-          class="no-underline"
-          target="_blank"
-          rel="noopener"
-        >
-          Latitude
-        </a>
+
+      <div class="space-y-4">
+        <div class="eyebrow">Latest posts</div>
+        <div class="space-y-2">
+          {posts.map((post) => {
+            const frontmatterSlug =
+              typeof post.data.slug === 'string' && post.data.slug.trim()
+                ? post.data.slug.trim()
+                : undefined;
+            const slug = frontmatterSlug ?? post.slug;
+
+            return (
+              <a
+                href={`/blog/${slug}`}
+                class="group flex items-baseline justify-between gap-6 no-underline"
+              >
+                <span class="font-serif text-xl leading-snug group-hover:text-accent">
+                  {post.data.title}
+                </span>
+                <span class="shrink-0 text-xs uppercase tracking-[0.18em] text-muted">
+                  {formatDate(post.data.date)}
+                </span>
+              </a>
+            );
+          })}
+        </div>
+
+        <div class="pt-2">
+          <a href="/blog" class="text-sm no-underline">
+            See more
+          </a>
+        </div>
       </div>
     </div>
   </section>
